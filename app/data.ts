@@ -13,7 +13,7 @@ const FLOOR_DATA_CONST = [
   },
   {
     person: "Gabe",
-    category: "Junk drawer",
+    category: "Christmas Movies",
     hasPlayed: false,
     isStillInTheGame: true,
   },
