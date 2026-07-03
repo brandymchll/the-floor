@@ -85,7 +85,7 @@ export type Category =
   | "Broadway shows"
   | "Disney characters"
   | "Kitchen gadgets"
-  | "Junk drawer"
+  | "Top Toys"
   | "Laundry"
   | "Pop divas"
   | "Chicago tourist stuff"
@@ -124,158 +124,18 @@ type CategoryMetadata = {
   examples: ImageExample[] | TextExample[];
 };
 
-const ChristmasBoxOfficeCategory: CategoryMetadata = {
-  name: "Christmas Box Office",
-  folder: "Christmas Box Office",
+const TopToysCategory: CategoryMetadata = {
+  name: "Top Toys",
+  folder: "Top Toys",
   examples: [
     {
-      name: "Pikachu",
-      image: "pikachu.png",
+      name: "Furby",
+      image: "furby.png",
       alternatives: [],
     },
     {
-      name: "Charizard",
-      image: "charizard.png",
-      alternatives: [],
-    },
-    {
-      name: "Mewtwo",
-      image: "mewtwo.png",
-      alternatives: [],
-    },
-    {
-      name: "Mew",
-      image: "mew.png",
-      alternatives: [],
-    },
-    {
-      name: "Blastoise",
-      image: "blastoise.png",
-      alternatives: [],
-    },
-    {
-      name: "Venusaur",
-      image: "venusaur.png",
-      alternatives: [],
-    },
-    {
-      name: "Squirtle",
-      image: "squirtle.png",
-      alternatives: [],
-    },
-    {
-      name: "Bulbasaur",
-      image: "bulbasaur.png",
-      alternatives: [],
-    },
-    {
-      name: "Charmander",
-      image: "charmander.png",
-      alternatives: [],
-    },
-    {
-      name: "Eevee",
-      image: "eevee.png",
-      alternatives: [],
-    },
-    {
-      name: "Jigglypuff",
-      image: "jigglypuff.png",
-      alternatives: [],
-    },
-    {
-      name: "Raichu",
-      image: "raichu.png",
-      alternatives: [],
-    },
-    {
-      name: "Pidgey",
-      image: "pidgey.png",
-      alternatives: [],
-    },
-    {
-      name: "Rattata",
-      image: "rattata.png",
-      alternatives: [],
-    },
-    {
-      name: "Zubat",
-      image: "zubat.png",
-      alternatives: [],
-    },
-    {
-      name: "Magikarp",
-      image: "magikarp.png",
-      alternatives: [],
-    },
-    {
-      name: "Onix",
-      image: "onix.png",
-      alternatives: [],
-    },
-    {
-      name: "Geodude",
-      image: "geodude.png",
-      alternatives: [],
-    },
-    {
-      name: "Gastly",
-      image: "gastly.png",
-      alternatives: [],
-    },
-    {
-      name: "Clefairy",
-      image: "clefairy.png",
-      alternatives: [],
-    },
-    {
-      name: "Charmeleon",
-      image: "charmeleon.png",
-      alternatives: [],
-    },
-    {
-      name: "Ivysaur",
-      image: "ivysaur.png",
-      alternatives: [],
-    },
-    {
-      name: "Wartortle",
-      image: "wartortle.png",
-      alternatives: [],
-    },
-    {
-      name: "Vaporeon",
-      image: "vaporeon.png",
-      alternatives: [],
-    },
-    {
-      name: "Jolteon",
-      image: "jolteon.png",
-      alternatives: [],
-    },
-    {
-      name: "Flareon",
-      image: "flareon.png",
-      alternatives: [],
-    },
-    {
-      name: "Dragonite",
-      image: "dragonite.png",
-      alternatives: [],
-    },
-    {
-      name: "Dragonair",
-      image: "dragonair.png",
-      alternatives: [],
-    },
-    {
-      name: "Dratini",
-      image: "dratini.png",
-      alternatives: [],
-    },
-    {
-      name: "Vulpix",
-      image: "vulpix.png",
+      name: "My Little Pony",
+      image: "my-little-pony.png",
       alternatives: [],
     },
   ],
@@ -298,7 +158,7 @@ export const CATEGORY_METADATA: Record<Category, CategoryMetadata> = {
   "Chicago tourist stuff": ChicagoTouristStuffCategory,
   "City Skylines": CitySkylinesCategory,
   Comedians: ComediansCategory,
-  "Disney Channel Original Movies": DisneyChannelOriginalMoviesCategory,
+  "Top Toys": TopToysCategory,
   "Disney characters": DisneyCharactersCategory,
   Dogs: DogsCategory,
   "Fair foods": FairFoodsCategory,
