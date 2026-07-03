@@ -56,7 +56,7 @@ type CategoryMetadata = {
 
 const TopToysCategory: CategoryMetadata = {
   name: "Top Toys",
-  folder: "Top Toys",
+  folder: "top-toys",
   examples: [
     {
       name: "Furby",
@@ -73,7 +73,7 @@ const TopToysCategory: CategoryMetadata = {
 
 const ChristmasMoviesCategory: CategoryMetadata = {
   name: "Christmas Movies",
-  folder: "Christmas Movies",
+  folder: "christmas-movies",
   examples: [
     {
       name: "Christmas Vacation",
