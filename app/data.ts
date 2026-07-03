@@ -1,25 +1,25 @@
 const FLOOR_DATA_CONST = [
   {
-    person: "Zoey",
-    category: "Laundry",
+    person: "Sandra",
+    category: "Christmas Box Office",
     hasPlayed: false,
     isStillInTheGame: true,
   },
   {
     person: "Rachel",
-    category: "Fridge",
-    hasPlayed: false,
-    isStillInTheGame: true,
-  },
-  {
-    person: "Gabe",
     category: "Christmas Movies",
     hasPlayed: false,
     isStillInTheGame: true,
   },
   {
-    person: "Josh",
-    category: "Fast food chains",
+    person: "Gary",
+    category: "Christmas Decorations",
+    hasPlayed: false,
+    isStillInTheGame: true,
+  },
+  {
+    person: "Kasey",
+    category: "Christmas Songs",
     hasPlayed: false,
     isStillInTheGame: true,
   },
