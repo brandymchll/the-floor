@@ -60,7 +60,7 @@ const TopToysCategory: CategoryMetadata = {
   examples: [
     {
       name: "Furby",
-      image: "furby.jpg",
+      image: "furby.png",
       alternatives: [],
     },
     {
