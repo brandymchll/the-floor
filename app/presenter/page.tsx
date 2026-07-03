@@ -854,7 +854,7 @@ export default function PresenterPage({
           <FloorButton
             variant="rectangular"
             className="font-semibold text-base"
-            onClick={() => setDemoDetails({ category: "Apps" })}
+            onClick={() => setDemoDetails({ category: "Top Toys" })}
           >
             Start Single Round
           </FloorButton>
