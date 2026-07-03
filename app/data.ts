@@ -1,73 +1,13 @@
 const FLOOR_DATA_CONST = [
   {
     person: "Sandra",
-    category: "Christmas Box Office",
+    category: "Top Toys",
     hasPlayed: false,
     isStillInTheGame: true,
   },
   {
     person: "Rachel",
     category: "Christmas Movies",
-    hasPlayed: false,
-    isStillInTheGame: true,
-  },
-  {
-    person: "Gary",
-    category: "Christmas Decorations",
-    hasPlayed: false,
-    isStillInTheGame: true,
-  },
-  {
-    person: "Kasey",
-    category: "Christmas Songs",
-    hasPlayed: false,
-    isStillInTheGame: true,
-  },
-  {
-    person: "Carl",
-    category: "Top Toys",
-    hasPlayed: false,
-    isStillInTheGame: true,
-  },
-  {
-    person: "Zoey",
-    category: "Movies",
-    hasPlayed: false,
-    isStillInTheGame: true,
-  },
-  {
-    person: "Andrea",
-    category: "Disney characters",
-    hasPlayed: false,
-    isStillInTheGame: true,
-  },
-  {
-    person: "Tanner",
-    category: "Superheros",
-    hasPlayed: false,
-    isStillInTheGame: true,
-  },
-  {
-    person: "Emma",
-    category: "Taylor Swift Lyrics",
-    hasPlayed: false,
-    isStillInTheGame: true,
-  },
-  {
-    person: "Nolan",
-    category: "States",
-    hasPlayed: false,
-    isStillInTheGame: true,
-  },
-  {
-    person: "Nic",
-    category: "Kitchen gadgets",
-    hasPlayed: false,
-    isStillInTheGame: true,
-  },
-  {
-    person: "Syd",
-    category: "Famous people who died before turning 30",
     hasPlayed: false,
     isStillInTheGame: true,
   },
@@ -81,18 +21,8 @@ type UsedCategories = (typeof FLOOR_DATA_CONST)[number]["category"];
 type UnusedCategoriesFromConst = Exclude<Category, UsedCategories>;
 
 export type Category =
-  | "Christmas Box Office"
-  | "Broadway shows"
-  | "Disney characters"
-  | "Kitchen gadgets"
-  | "Top Toys"
-  | "Laundry"
-  | "Pop divas"
-  | "Chicago tourist stuff"
-  | "Board games"
-  | "States"
-  | "Harry Potter characters"
-  | "Spirit Halloween Catalogue";
+  | "Christmas Movies"
+  | "Top Toys";
 
 export interface FloorData {
   person: string;
@@ -130,62 +60,35 @@ const TopToysCategory: CategoryMetadata = {
   examples: [
     {
       name: "Furby",
-      image: "furby.png",
+      image: "furby.jpg",
       alternatives: [],
     },
     {
       name: "My Little Pony",
-      image: "my-little-pony.png",
+      image: "my-little-pony.jpg",
       alternatives: [],
     },
   ],
 };
 
-// const ChilisCategory: CategoryMetadata = {
-//   name: "Chilis",
-//   folder: "chilis",
-//   examples: [],
-// };
+const ChristmasMoviesCategory: CategoryMetadata = {
+  name: "Christmas Movies",
+  folder: "Christmas Movies",
+  examples: [
+    {
+      name: "Christmas Vacation",
+      image: "christmas-vacation.jpg",
+      alternatives: [],
+    },
+    {
+      name: "Elf",
+      image: "elf.jpg",
+      alternatives: [],
+    },
+  ],
+};
 
 export const CATEGORY_METADATA: Record<Category, CategoryMetadata> = {
-  "Airport Codes": AirportCodesCategory,
-  "Amusement Parks": AmusementParksCategory,
-  Apps: AppsCategory,
-  "Board games": BoardGamesCategory,
-  Books: BooksCategory,
-  "Brand slogans": BrandSlogansCategory,
-  "Broadway shows": BroadwayShowsCategory,
-  "Chicago tourist stuff": ChicagoTouristStuffCategory,
-  "City Skylines": CitySkylinesCategory,
-  Comedians: ComediansCategory,
+  "Christmas Movies": ChristmasMoviesCategory,
   "Top Toys": TopToysCategory,
-  "Disney characters": DisneyCharactersCategory,
-  Dogs: DogsCategory,
-  "Fair foods": FairFoodsCategory,
-  "Famous people who died before turning 30":
-    FamousPeopleWhoDiedBeforeTurning30Category,
-  "Fast food chains": FastFoodChainsCategory,
-  Fridge: FridgeCategory,
-  Garage: GarageCategory,
-  "Harry Potter characters": HarryPotterCharactersCategory,
-  Holidays: HolidaysCategory,
-  Horses: HorsesCategory,
-  "Christmas Box Office": ChristmasBoxOfficeCategory,
-  "Kitchen gadgets": KitchenGadgetsCategory,
-  Laundry: LaundryCategory,
-  Math: MathCategory,
-  "MLB Teams": MlbTeamsCategory,
-  Movies: MoviesCategory,
-  "Pop divas": PopDivasCategory,
-  Pokemon: PokemonCategory,
-  "Reality tv shows": RealityTvShowsCategory,
-  "Rom Coms": RomComsCategory,
-  "Spirit Halloween Catalogue": SpiritHalloweenCatalogueCategory,
-  Sports: SportsCategory,
-  States: StatesCategory,
-  Superheros: SuperherosCategory,
-  "Taylor Swift Lyrics": TaylorSwiftLyricsCategory,
-  "The Office": TheOfficeCategory,
-  Thanksgiving: ThanksgivingCategory,
-  "Video Game Characters": VideoGameCharactersCategory,
 };
