@@ -24,8 +24,8 @@ const FLOOR_DATA_CONST = [
     isStillInTheGame: true,
   },
   {
-    person: "Ellie",
-    category: "Rom Coms",
+    person: "Carl",
+    category: "Top Toys",
     hasPlayed: false,
     isStillInTheGame: true,
   },
